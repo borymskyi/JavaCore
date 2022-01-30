@@ -33,7 +33,8 @@ public class Test18 {
         StringBuilder sb = new StringBuilder("Hello World");
 //        sb.append(arrayChar, 1, 2); //append
         System.out.println(sb);
-        System.out.println("awd");
+
+        System.out.println("Test git");
 
 
 
