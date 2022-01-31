@@ -41,6 +41,9 @@ public class Test18 {
         System.out.println("Git commit | пофиксил git commit)");
         System.out.println("Git commit | пофиксил git commit");
 
+        System.out.println("local commit | проверил слияние, pull, commit, checkout, remote, status, log --graph, и тд");
+
+
 
 //        String[] array0 = {"privet", "poka", "ok"};
 //        System.out.println(array0[0]);
