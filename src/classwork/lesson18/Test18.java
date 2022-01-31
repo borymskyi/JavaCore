@@ -21,29 +21,28 @@ public class Test18 {
     }
 
     public static void main(String[] args) {
-
-        double[] array1 = {1.05, -3.14, 8.40, 9.04, -3.0, -20.5};
-        maxMin(array1);
-
-        System.out.println();
-
-        char[] arrayChar = {'a', 'b', 'c', 'd'};
-//        String str = new String(arrayChar);
-//        System.out.println(str);
-        StringBuilder sb = new StringBuilder("Hello World");
-//        sb.append(arrayChar, 1, 2); //append
-        System.out.println(sb);
-
-        System.out.println("Test git");
-
-        System.out.println("new commit | пофиксил loal commit");
-
-        System.out.println("Git commit | пофиксил git commit)");
-        System.out.println("Git commit | пофиксил git commit");
-
-        System.out.println("local commit | проверил слияние, pull, commit, checkout, remote, status, log --graph, и тд");
-
-
+//        double[] array1 = {1.05, -3.14, 8.40, 9.04, -3.0, -20.5};
+//        maxMin(array1);
+//
+//        System.out.println();
+//
+//        char[] arrayChar = {'a', 'b', 'c', 'd'};
+////        String str = new String(arrayChar);
+////        System.out.println(str);
+//        StringBuilder sb = new StringBuilder("Hello World");
+////        sb.append(arrayChar, 1, 2); //append
+//        System.out.println(sb);
+//
+//        System.out.println("Test git");
+//
+//        System.out.println("new commit | пофиксил loal commit");
+//
+//        System.out.println("Git commit | пофиксил git commit)");
+//        System.out.println("Git commit | пофиксил git commit");
+//
+//        System.out.println("local commit | проверил слияние, pull, commit, checkout, remote, status, log --graph, и тд");
+//
+//
 
 //        String[] array0 = {"privet", "poka", "ok"};
 //        System.out.println(array0[0]);
