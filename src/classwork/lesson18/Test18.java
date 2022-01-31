@@ -36,6 +36,8 @@ public class Test18 {
 
         System.out.println("Test git");
 
+        System.out.println("new commit");
+
 
 
 //        String[] array0 = {"privet", "poka", "ok"};
