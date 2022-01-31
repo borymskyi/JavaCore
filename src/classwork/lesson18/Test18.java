@@ -36,8 +36,10 @@ public class Test18 {
 
         System.out.println("Test git");
 
-        System.out.println("new commit");
+        System.out.println("new commit | пофиксил loal commit");
 
+        System.out.println("Git commit | пофиксил git commit)");
+        System.out.println("Git commit | пофиксил git commit");
 
 
 //        String[] array0 = {"privet", "poka", "ok"};
