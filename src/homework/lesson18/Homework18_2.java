@@ -32,10 +32,8 @@ public class Homework18_2 {
         }
     }
 
-
     public static void main(String[] args) {
         String[][] str = { {"элемент00", "элемент01"}, {"элемент10"}, {"элемент10", "элемент11"} };
         showArray(str);
     }
-
 }
