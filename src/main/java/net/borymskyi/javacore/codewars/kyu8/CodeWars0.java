@@ -8,9 +8,9 @@ public class Kata {
 //solution('abc', 'bc') // returns true
 //solution('abc', 'd') // returns false
  */
-package main.java.net.borymskyi.javacore.practice;
+package main.java.net.borymskyi.javacore.codewars.kyu8;
 
-public class CodeWars {
+public class CodeWars0 {
     public static boolean solution(String str, String ending) {
         if (str.endsWith(ending)) {
             return true;
