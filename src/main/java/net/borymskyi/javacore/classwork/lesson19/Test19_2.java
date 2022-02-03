@@ -58,7 +58,10 @@ public class Test19_2 {
 //            System.out.println(array[i] + " ");
 //        }
 
-        int arrays[] = {1, 2, 3, 4, 5}; for (int i : arrays) System.out.print(i + " ");
+        int arrays[] = {1, 2, 3, 4, 5};
+        for (int i : arrays) {
+            System.out.print(i + " ");
+        }
 
 
 

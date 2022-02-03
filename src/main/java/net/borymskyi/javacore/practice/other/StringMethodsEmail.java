@@ -1,5 +1,5 @@
 //Практикую матоды стринга | Practicing String methods
-package main.java.net.borymskyi.javacore.practice;
+package main.java.net.borymskyi.javacore.practice.other;
 
 public class StringMethodsEmail {
 
