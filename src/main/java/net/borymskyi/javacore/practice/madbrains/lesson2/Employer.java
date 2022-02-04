@@ -11,7 +11,7 @@ public class Employer {
     }
 
     public String getName() {
-        return this.name;
+        return maskName(this.name);
     }
 
     public int getAge() {
@@ -26,6 +26,11 @@ public class Employer {
     public void setAge(int age) {
         System.out.println("age is set");
         this.age = age;
+    }
+
+    private String maskName(String name) {
+        name = name.replace("i", "x");
+        return name;
     }
 
     public void work(int hour){

@@ -21,6 +21,12 @@ public class Developer extends Employer {
         System.out.println(getName() + " writes code in " + getLanguage() + " language.");
     }
 
+//    @Override
+//    public String maskName(String name, String secondName) {
+//        name = name.replace("i", "x");
+//        return name;
+//    }
+
     @Override
     public String cout() {
         return "[Developer]" + " language: " + language + " |name: " + getName() + " |age: " + getAge();
