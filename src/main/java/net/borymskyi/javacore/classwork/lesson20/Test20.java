@@ -249,13 +249,69 @@ public class Test20 {
 //        System.out.println(arraysb51);
 
         // .compare метод из 11 джавы
-        int [] array1 = {1, 2, 3, 4, 5};
-        int [] array2 = {1, 2, 3, 5};
-        char [] array3 = {'p', 'r', 'i', 'v', 'e', 't'};
-        char [] array4 = {'p', 'r', 'i', 'v', 'i', 'v', 'k', 'a'};
+//        int [] array1 = {1, 2, 3, 4, 5};
+//        int [] array2 = {1, 2, 3, 5};
+//        char [] array3 = {'p', 'r', 'i', 'v', 'e', 't'};
+//        char [] array4 = {'p', 'r', 'i', 'v', 'i', 'v', 'k', 'a'};
 //        System.out.println(Arrays.compare(array, array2)); //result: -1 (так как ар1 меньше ар2). (ар1 в словаре идет раньше чем 1.2.3.5) (когда больше 1). (когда одинаковы = 0).
 
         // .mismatch находит первый индекс расхождения
 //        System.out.println(Arrays.mismatch(array, array2));
+
+        // removeAll(Colletion <> c) -> boolean  в нашем лите будут удалены все элементы которые находятся в укзаном аррлисте.
+        ArrayList<String> arraystr0 = new ArrayList<String>();
+        arraystr0.add("awdx");
+        arraystr0.add("awdxx");
+        arraystr0.add("awdxxx");
+        arraystr0.add("awdxxxx");
+        ArrayList<String> arraystr1 = new ArrayList<String>();
+        arraystr1.add("awdx");
+        arraystr1.add("awdxx");
+//        arraystr1.add("awdyyy");
+//        arraystr1.add("awdyyyy");
+        arraystr1.add("awdxxx");
+        arraystr1.add("awdxxxx");
+
+//        arraystr0.removeAll(arraystr1);
+//        System.out.println("arraystr0: " + arraystr0);
+
+        // .retainAll(Colletion <> c) -> boolean  (наоборот). удаляет все элементы которые не сходятся.
+//        arraystr0.retainAll(arraystr1);
+//        System.out.println(arraystr0);
+
+        // .containsAll(Collection<> c) -> boolean
+//        boolean result = arraystr0.containsAll(arraystr1);
+//        System.out.println(result);
+
+        // .subList(int fromIndex, int toIndex) -> List<E>
+//        List <String> liststr0 = arraystr0.subList(0, 2);
+//        System.out.println(liststr0);
+//        System.out.println(arraystr0);
+//        liststr0.subList(0,1).clear();  // удаляет указаные элементы ...
+//        System.out.println(liststr0);
+//        System.out.println(arraystr0);
+
+        // .toArray() -> Object[]
+//        Object [] array = arraystr0.toArray();
+
+        // .toArray(T[] a) -> T []
+//        String[] arraystr = arraystr0.toArray(new String[arraystr0.size()]);
+//        for (String i : arraystr) {
+//            System.out.print(i + " ");
+//        }
+
+        // jdk 11
+        // List.of(E ... elements) -> List<E>
+        // List.copyOf(Collection<E> c) -> List<E>
+
+//        Map<Integer, String> map = new HashMap<>();
+//        map.put(100, "test0");
+//        map.put(101, "test1");
+//        map.put(102, "test2");
+//        map.put(103, "test3");
+////        map.put(103, "test4");
+//        map.put(104, "test4");
+//        System.out.println(map);
+
     }
 }
