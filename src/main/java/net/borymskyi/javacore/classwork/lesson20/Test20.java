@@ -208,27 +208,27 @@ public class Test20 {
 //        System.out.println(liststr10);
 
         // equals(ArrayList<DataType>) -> boolean  (метод перезаписан)
-        ArrayList<StringBuilder> arraysb50 = new ArrayList<StringBuilder>();
-        StringBuilder sb10 = new StringBuilder("global");
-        StringBuilder sb11 = new StringBuilder("first");
-        StringBuilder sb12 = new StringBuilder("second");
-        arraysb50.add(sb10);
-        arraysb50.add(sb11);
-        arraysb50.add(sb12);
-        System.out.println(arraysb50);
-        ArrayList<StringBuilder> arraysb51 = new ArrayList<StringBuilder>();
+//        ArrayList<StringBuilder> arraysb50 = new ArrayList<StringBuilder>();
+//        StringBuilder sb10 = new StringBuilder("global");
+//        StringBuilder sb11 = new StringBuilder("first");
+//        StringBuilder sb12 = new StringBuilder("second");
+//        arraysb50.add(sb10);
+//        arraysb50.add(sb11);
+//        arraysb50.add(sb12);
+//        System.out.println(arraysb50);
+//        ArrayList<StringBuilder> arraysb51 = new ArrayList<StringBuilder>();
 //        StringBuilder sb13 = new StringBuilder("global");
 //        StringBuilder sb14 = new StringBuilder("first");
 //        StringBuilder sb15 = new StringBuilder("second");
-        arraysb51.add(sb10);
-        arraysb51.add(sb11);
-        arraysb51.add(sb12);
-        System.out.println(arraysb51);
-        System.out.println(arraysb50 == arraysb51);
-        System.out.println(arraysb51.equals(arraysb50));
+//        arraysb51.add(sb10);
+//        arraysb51.add(sb11);
+//        arraysb51.add(sb12);
+//        System.out.println(arraysb51);
+//        System.out.println(arraysb50 == arraysb51);
+//        System.out.println(arraysb51.equals(arraysb50));
 
         // Iterator .hasNext() = проверяет есть ли дальше элемент |  .next() = выдает элемент
-        System.out.println();
+//        System.out.println();
 //        Iterator<StringBuilder> it = arraysb51.iterator();
 //        while (it.hasNext()) {
 //            System.out.print(it.next() + " ");
@@ -248,7 +248,14 @@ public class Test20 {
 //        }
 //        System.out.println(arraysb51);
 
+        // .compare метод из 11 джавы
+        int [] array1 = {1, 2, 3, 4, 5};
+        int [] array2 = {1, 2, 3, 5};
+        char [] array3 = {'p', 'r', 'i', 'v', 'e', 't'};
+        char [] array4 = {'p', 'r', 'i', 'v', 'i', 'v', 'k', 'a'};
+//        System.out.println(Arrays.compare(array, array2)); //result: -1 (так как ар1 меньше ар2). (ар1 в словаре идет раньше чем 1.2.3.5) (когда больше 1). (когда одинаковы = 0).
 
-
+        // .mismatch находит первый индекс расхождения
+//        System.out.println(Arrays.mismatch(array, array2));
     }
 }
