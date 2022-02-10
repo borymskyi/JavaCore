@@ -4,9 +4,11 @@ public class Developer extends Employer {
 
     private String language;
 
-    public Developer(String name, int age, String language) {
+    public Developer(String dmytrii, int i, String java) {
+    }
+
+    public Developer(String name, int age) {
         super(name, age);
-        this.language = language;
     }
 
     public String getLanguage() {

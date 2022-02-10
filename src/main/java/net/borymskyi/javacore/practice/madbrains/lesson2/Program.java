@@ -1,6 +1,4 @@
-package main.java.net.borymskyi.javacore.practice.madbrains;
-
-import main.java.net.borymskyi.javacore.practice.madbrains.lesson2.Developer;
+package main.java.net.borymskyi.javacore.practice.madbrains.lesson2;
 
 public class Program {
 
@@ -11,5 +9,7 @@ public class Program {
         System.out.println(dev0.cout());
         dev0.setAge(25);
         System.out.println(dev0.cout());
+
+
     }
 }
