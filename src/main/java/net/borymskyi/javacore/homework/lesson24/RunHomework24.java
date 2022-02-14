@@ -37,5 +37,9 @@ public class RunHomework24 {
         lev2.sleep();
         lev2.run();
         lev2.speak();
+
+        Mechenosec test = new Mechenosec("test10");
+        System.out.println(test);
+        System.out.println(test.name);
     }
 }

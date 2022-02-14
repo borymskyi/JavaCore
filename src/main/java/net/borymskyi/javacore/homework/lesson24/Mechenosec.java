@@ -15,4 +15,11 @@ public class Mechenosec extends Fish{
     public void eat(){
         System.out.println("The Swordtail is not a predatory fish, and it eats regular fish food!");
     }
+
+    @Override
+    public String toString() {
+        return "Mechenosec{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }
