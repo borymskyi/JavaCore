@@ -10,20 +10,33 @@ public class Test25_3 {
 ////        System.out.println(((Doctor2) emp).specializaciya); Exception in thread
 //        Employee2 emp2 = new Doctor2(20, 5, "awd"); // upcasting.
 //        Doctor2 emp3 = (Doctor2)emp2; // downcasting
+//        TestInterface25_3 emptest = new Teacher2(50, 10, "test");
+//        emptest.speak();
+//        ((Teacher2) emptest).work();
 
-        TestInterface25_3 emptest = new Teacher2(50, 10, "test");
-        emptest.speak();
-        ((Teacher2) emptest).work();
+        Employee2 emp0 = new Driver2(30, "Tom",  10, "driver", "renault");
+        Employee2 emp1 = new Doctor2(32, "Mark",  5, "doctor");
+        Employee2 emp2 = new Teacher2(45, "Dmytrii",  12, "teacher");
+        Employee2[] emp = {emp0, emp1, emp2};
+        for (Employee2 e : emp) {
+            if (e instanceof Driver2) {
+                System.out.println(e.name + " have a car: " + ((Driver2) e).car);
+            }
+        }
     }
 }
+
+
 
 
 class Employee2 {
 
     int age;
+    String name;
 
-    public Employee2(int age) {
+    public Employee2(int age, String name) {
         this.age = age;
+        this.name = name;
     }
 
     public void work(){
@@ -32,13 +45,15 @@ class Employee2 {
 }
 
 
+
+
 class Teacher2 extends Employee2 implements TestInterface25_3 {
 
     int stazTeacher;
     String specializaciya;
 
-    public Teacher2(int age, int stazTeacher, String specializaciya) {
-        super(age);
+    public Teacher2(int age, String name, int stazTeacher, String specializaciya) {
+        super(age, name);
         this.stazTeacher = stazTeacher;
         this.specializaciya = specializaciya;
     }
@@ -55,13 +70,15 @@ class Teacher2 extends Employee2 implements TestInterface25_3 {
 }
 
 
+
+
 class Doctor2 extends Employee2 {
 
     int stazDoctor;
     String specializaciya;
 
-    public Doctor2(int age, int stazDoctor, String specializaciya) {
-        super(age);
+    public Doctor2(int age, String name, int stazDoctor, String specializaciya) {
+        super(age, name);
         this.stazDoctor = stazDoctor;
         this.specializaciya = specializaciya;
     }
@@ -73,15 +90,23 @@ class Doctor2 extends Employee2 {
 }
 
 
+
+
 class Driver2 extends Employee2 {
 
     int stazDriver;
     String specializaciya;
+    String car;
 
-    public Driver2(int age, int stazDriver, String specializaciya) {
-        super(age);
+    public Driver2(int age, String name, int stazDriver, String specializaciya, String car) {
+        super(age, name);
         this.stazDriver = stazDriver;
         this.specializaciya = specializaciya;
+        this.car = car;
+    }
+
+    public void drive() {
+        System.out.println("Driver2 drive in " + this.car);
     }
 
     @Override
@@ -89,6 +114,8 @@ class Driver2 extends Employee2 {
         System.out.println("Driver2 is working");
     }
 }
+
+
 
 
 interface TestInterface25_3 {
