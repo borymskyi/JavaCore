@@ -10,9 +10,10 @@ public class ClassWork27_8 {
             FileInputStream fis = new FileInputStream(f);
         } catch(IOException e) {
             System.out.println("catch! IOException");
-        } catch(FileNotFoundException e) {
-            System.out.println("catch! " + e);
         }
+//        catch(FileNotFoundException e) {
+//            System.out.println("catch! " + e);
+//        }
     }
 
     public static void main(String[] args) {
