@@ -1,5 +1,6 @@
 /*
     Напишите свой класс StringBuilder, с возможностью оповещения других объектов об изменении своего состояния.
+
     Для этого делегируйте все методы стандартному StringBuilder, а в собственном классе реализуйте шаблон
     проектирования «Наблюдатель».
  */
@@ -16,18 +17,17 @@ interface OnStringBuilderChangeListener {
 
 class OvservableStringBuilder {
 
+    // ....... Поля ..........
     private OnStringBuilderChangeListener onChangeListener;
 
     private StringBuilder stringBuilder;
 
-    public void setOnChangeListener(OnStringBuilderChangeListener onChangeListener) {
-        this.onChangeListener = onChangeListener;
-    }
-
+    // ....... Конструктор ..........
     public OvservableStringBuilder() {
         stringBuilder = new StringBuilder();
     }
 
+    // ....... Метод уведомления ..........
     private void notifyOnStringBuilderChangeListener(){
         if(onChangeListener != null){
             onChangeListener.onChange(this);
@@ -47,10 +47,9 @@ class OvservableStringBuilder {
         return this;
     }
 
-    public OvservableStringBuilder insert(int index, char[] str, int offset, int len) {
-        stringBuilder.insert(index, str, offset, len);
-        notifyOnStringBuilderChangeListener();
-        return this;
+    // ....... Геттеры и Сеттеры ..........
+    public void setOnChangeListener(OnStringBuilderChangeListener onChangeListener) {
+        this.onChangeListener = onChangeListener;
     }
 
     // ....... Служебные методы ..........
@@ -73,8 +72,8 @@ public class Watcher {
     public static void main(String[] strings) {
         OvservableStringBuilder UndoableStringBuilder = new OvservableStringBuilder();
         UndoableStringBuilder.setOnChangeListener(new MyListener());
-        UndoableStringBuilder.append("One");
-        UndoableStringBuilder.append("Two");
-        UndoableStringBuilder.append("Three");
+        UndoableStringBuilder.append("..First message..");
+        UndoableStringBuilder.append("..Second message..");
+        UndoableStringBuilder.replace(0, 17, "..Replace message..");
     }
 }
