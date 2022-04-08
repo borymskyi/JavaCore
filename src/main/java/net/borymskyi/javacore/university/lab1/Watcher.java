@@ -1,19 +1,11 @@
 /*
-    Напишите свой класс StringBuilder, с возможностью оповещения других объектов об изменении своего состояния.
+    1. Напишите свой класс StringBuilder, с возможностью оповещения других объектов об изменении своего состояния.
 
     Для этого делегируйте все методы стандартному StringBuilder, а в собственном классе реализуйте шаблон
     проектирования «Наблюдатель».
  */
 
-package main.java.net.borymskyi.javacore.university;
-/**
- Слушатель.
- Каждый раз, когда меняется связанный с ним UndoableStringBuilder,
- вызывается метод onChange().
- */
-interface OnStringBuilderChangeListener {
-    void onChange(OvservableStringBuilder stringBuilder);
-}
+package main.java.net.borymskyi.javacore.university.lab1;
 
 class OvservableStringBuilder {
 
@@ -58,11 +50,11 @@ class OvservableStringBuilder {
     }
 }
 
+interface OnStringBuilderChangeListener {
+    void onChange(OvservableStringBuilder stringBuilder);
+}
+
 class MyListener implements OnStringBuilderChangeListener {
-    /*
-        Определяем метод onChange
-        В него передаётся stringBuilder, который "прослушивается"
-     */
     public void onChange(OvservableStringBuilder stringBuilder) {
         System.out.println("CHANGED: " + stringBuilder.toString());
     }
